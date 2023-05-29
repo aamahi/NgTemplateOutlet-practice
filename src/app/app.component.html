@@ -1,9 +1,9 @@
 <div class="topnav">
-  <a class="active">Person</a>
-  <a>Product</a>
+  <a [ngClass]="{'active': tab === 'person'}" (click)="active('person')">Person</a>
+  <a [ngClass]="{'active': tab === 'product'}" (click)="active('product')">Product</a>
 </div>
 
 <div class="container">
-  <app-app-person></app-app-person>
-  <app-app-product></app-app-product>
+  <app-app-person *ngIf="tab==='person'"></app-app-person>
+  <app-app-product *ngIf="tab==='product'"></app-app-product>
 </div>

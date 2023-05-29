@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  mode = 'card';
-  items = [
-    {
-      header: 'Creating Reuseable Components with NgTemplateOutlet in Angular',
-      content: 'The single responsibility principle...'
-    } // ... more items
-  ];
+  tab: string = 'person'
+  public active(value: string): void {
+    if(value === 'person') {
+      this.tab = value;
+    }else if('product') {
+      this.tab = value;
+    }
+  }
 }

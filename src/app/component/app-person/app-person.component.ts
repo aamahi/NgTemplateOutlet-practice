@@ -10,8 +10,8 @@ import {UserProfile} from "../common.interface";
 export class AppPersonComponent {
   public profile: UserProfile = {
     name: 'John Doe',
-    bio: 'Software Engineer',
-    image: 'path/to/image.jpg',
+    bio: 'Senior Software Engineer',
+    image: 'https://drive.google.com/uc?id=1EVA3KUBLxCXF2EGmTf4LUB8F4yAvBrjl',
     posts: 10,
     followers: 1000,
     following: 500
